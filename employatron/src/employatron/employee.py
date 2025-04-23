@@ -12,7 +12,7 @@ class Employee:
         return self._hourly_rate*self._worked_hours
 
     def set_hourly_rate(self, hourly_rate:int):
-        self._hourly_rate = hourly_rate
+        self._hourly_rate = round(hourly_rate) #2001 out company has only integer hourly rates, if someone passes a float round to the nearest hourly rate. 
 
     def get_hourly_rate(self):
         return self._hourly_rate
